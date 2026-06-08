@@ -135,7 +135,7 @@ if not selected_province and output.get("last_active_drawing"):
 # WEATHER INFO DISPLAY (Nederlands)
 
 # dagen afkortingen voor voorspelling
-dagen_kort_nl = {0: "MA", 1: "DI", 2: "WO", 3: "DO", 4: "VR", 5: "ZA", 6: "ZO"}
+dagen_kort_nl = {0: "Maandag", 1: "Dinsdag", 2: "Woensdag", 3: "Donderdag", 4: "Vrijdag", 5: "Zaterdag", 6: "Zondag"}
 
 if selected_province:
     try:
