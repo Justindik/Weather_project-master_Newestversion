@@ -1,12 +1,12 @@
 import streamlit as st
 import folium
-import json
 import asyncio
 import python_weather
 from datetime import datetime
 import pytz
 from streamlit_folium import st_folium
 
+from geojson import load_geojson
 
 # pagina dingen
 st.set_page_config(
@@ -16,13 +16,6 @@ st.set_page_config(
 
 st.title("🇳🇱 Weer App Nederland")
 st.info("Selecteer of zoek een provincie")
-
-
-# Geojson is een formaat waarin eigenlijk een landkaart zit
-@st.cache_data
-def load_geojson():
-    with open("the-netherlands.geojson", "r", encoding="utf-8") as f:
-        return json.load(f)
 
 # maak een dictionary en vul die met de info uit geojson
 geojson_data = load_geojson()
