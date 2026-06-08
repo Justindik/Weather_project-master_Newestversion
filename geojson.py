@@ -1,3 +1,4 @@
+import streamlit as st
 import json
 
 # Geojson is een formaat waarin eigenlijk een landkaart zit
