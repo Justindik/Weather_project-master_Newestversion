@@ -18,13 +18,13 @@ st.title("🇳🇱 Weer App Europa")
 st.info("Selecteer of zoek een provincie")
 
 
-# Geojson
+# Geojson is een formaat waarin eigenlijk een landkaart zit
 @st.cache_data
 def load_geojson():
     with open("the-netherlands.geojson", "r", encoding="utf-8") as f:
         return json.load(f)
 
-
+# maak een dictionary en vul die met de info uit geojson
 geojson_data = load_geojson()
 
 # lijst maken van de provincies
