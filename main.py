@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🇳🇱 Weer App Nederland")
+st.title("🇳🇱 Weer App Europa")
 st.info("Selecteer of zoek een provincie")
 
 
